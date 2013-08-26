@@ -1,0 +1,10 @@
+{
+  "name": "reasonsto-matroushka",
+  "version": "0.0.0",
+  "description": "Matryoshka doll, git and bitcoin - a reasons.to elevator pitch",
+  "author": "Chris Price",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "knockout": "~2.3.0"
+  }
+}
