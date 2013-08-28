@@ -1,27 +1,30 @@
 #Intro
 Chris Price
-Work at SL, Technical Evangelist
-Spend my days building research and trading apps for financial institutions.
-But I'm more than a little obsessed with git and bitcoin...
-Maybe I can teach you what *Matryoshka* dolls, maybe a little about git or bitcoin, or maybe, just the limits of metaphore stretching...
+Maybe I can teach you what *Matryoshka* dolls are, maybe a little about git or bitcoin, or maybe, just the limits of metaphor stretching...
 @100pxls
 http://scottlogic.com/blog/cprice
 http://github.com/chrisprice
 
-#Matroushka Dolls
-I'm sure you've seen them before, normally refered to as Russian dolls (unless you're trying to get a talk accepted), each doll opens up to reveal another progressively smaller doll within. The main attraction is normally the very cute tiny dolls nestled right in the center but I was struck by something else, you *could* use the dolls to represent a sequence that can't be tampered with.
+#Matryoshka Dolls
+
+I'm sure you've seen them before, more commonly referred to as Russian dolls, each doll opens up to reveal another progressively smaller doll within. However, where most folk see cute tiny dolls, having spent too much time reading about bitcoin I saw a very elegant tamper-proof sequence...
 
 #Sequences
 
-
-A sequence can be made up of any number of states, where a state itself could be anything, a character, the contents of a file or even a financial transaction. But to keep things simple, and within my artistic reach, let's choose a sequence of colours - 
-
-YELLOW -> BLUE  -> RED -> GREEN 
-
-That's great but what makes it so special, why choose that over a list?
+A sequence is an ordered collection of things. They're everywhere from the letters of the alphabet to the colours of the rainbow, or more topically, from a series of commits in git to blocks of transactions in bitcoin. The important thing is that a sequence is not just a collection, but also the order in which they occur. The branch history in git can look enough of a mess without losing all sense of order!
 
 #Tampering
-Well if you gave me a stack of dolls, just by keeping a hold of the outer doll, I know that you, or anyone else, can't change the sequence without me knowing (unless your name is Derren Brown). In order to change the sequence you would need to open the doll which I'm holding. We've solved the problem of a secure sequence/history but at a price, every state we add to the sequence comes at a greater and greater storage cost, we'll very quickly run out of space.
+
+So, how can we stop that happening? Or stop someone going back and fiddling the order of your bitcoin transactions?
+
+Thinking back to the Matryoshka dolls, let's pretend I was presented with a nested sequence of dolls and that whoever nested the dolls choose them from a pool of coloured dolls. Just by keeping a hold of the outermost doll, I could guarantee that the sequence of those dolls couldn't change. Obviously there's nothing to stop someone bopping me over the head and grabbing the doll out of my cold dead fingers but at that point I'm probably beyond caring!
+
+Put another way, just by having a copy of the very latest commit I would know that no one would be able to change the commits that proceeded it without me knowing, or by having a copy of the latest transaction block I know that the transactions before it can't be changed without me knowing.
+
+There is one problem with this metaphor though
+
+sequence of ust by keeping a hold of the outer doll you'd be able to guarantee that I couldn't change the sequence of those dolls.
+So, the thing that had caught my attention looking at the Matryoshka dolls was that if you gave me a stack of dolls, just by keeping a hold of the outer doll, I know that you, or anyone else, can't change the sequence without me knowing. In order to change the sequence you would need to open the doll which I'm holding. We've solved the problem of a secure sequence/history but at a price, every state we add to the sequence comes at a greater and greater storage cost, we'll very quickly run out of space.
 
 What if there was a way to make all the dolls the same size?
 
